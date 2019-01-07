@@ -19,9 +19,6 @@ Data Set: [provided](/data/)
  * [ADDITIONAL PROJECT INFORMATION/TASK](#additional-project-information-task)
  * [ADDITIONAL USEFUL LINKS](#additional-useful-links)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 ### Goal of this Collaborative Project:
 * Learn to work in a collaborative environment
 * Build a Hybrid recommendation engine to recommend books to different users.
