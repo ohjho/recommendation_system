@@ -1,6 +1,6 @@
 # Recommendation System Collab Project
 ## Project Details
-Time Length: 3 Days
+Time Length: 3 Days (Jan 7-9, 2018)  
 Data Set: [provided](/data/)
 
 ### Goal of this Collaborative Project:
@@ -15,20 +15,20 @@ Contains 278,858 users (anonymized but with demographic information) providing 1
 ratings (explicit / implicit) about 271,379 books.
 #### Format
 The Book-Crossing dataset (CSV File) comprises 3 tables.
-##### BX-Users
+#### BX-Users
 Contains the users. Note that user IDs (`User-ID`) have been anonymized and map to integers.  
 
 Demographic data is provided (`Location`, `Age`) if available. Otherwise, these fields contain
 NULL-values.
-##### BX-Books
+#### BX-Books
 Books are identified by their respective ISBN. Invalid ISBNs have already been removed from
 the dataset. Moreover, some content-based information is given (`Book-Title`, `Book-Author`,
 `Year-Of-Publication`, `Publisher`), obtained from Amazon Web Services.
-Note that in case of several authors, only the first is provided.
+Note that in case of several authors, only the first is provided.  
 URLs linking to cover images are also given, appearing in three different flavours (`Image-URL-
 S`, `Image-URL-M`, `Image-URL-L`), i.e., small, medium, large. These URLs point to the
 Amazon web site.
-##### BX-Book-Ratings
+#### BX-Book-Ratings
 Contains the book rating information. Ratings (`Book-Rating`) are either explicit, expressed on a
 scale from 1-10 (higher values denoting higher appreciation), or implicit, expressed by 0.
 
@@ -59,17 +59,18 @@ Use a Collaborative filtering model that uses “Customer Behavior” for recomm
 In the two previous models (content and basic collaborative filtering approaches), we do not
 have the ratings for each book given by each user. We must find a way to predict all these
 missing ratings. For that, we have to find a set of features which can define how a user rates the
-books. These are called latent features.
+books. These are called **latent features**.
 
-Useful links:
-https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf
-http://nicolas-hug.com/blog/matrix_facto_1
-http://nicolas-hug.com/blog/matrix_facto_2
-http://nicolas-hug.com/blog/matrix_facto_3
-http://nicolas-hug.com/blog/matrix_facto_4
+Useful links:  
+https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf  
+http://nicolas-hug.com/blog/matrix_facto_1  
+http://nicolas-hug.com/blog/matrix_facto_2  
+http://nicolas-hug.com/blog/matrix_facto_3  
+http://nicolas-hug.com/blog/matrix_facto_4  
 
 Use the Matrix Factorization technique to extract the most important features from the existing
 features.  
+
 Use the Stochastic Gradient Descent to solve your optimization problem.
 
 Explain in detail the advantages and shortcomings of this Matrix factorization approach.
@@ -91,6 +92,7 @@ users.
 #### 3- PRESENTATION
 On Friday, starting at 5pm, Present your project, divide it across 5 groups covering the 5 main
 topics of this project.  
+
 1st group: Data Cleaning and EDA  
 2nd group: Content Based Filtering Approach  
 3rd group: Collaborative Filtering Approach  
@@ -98,14 +100,17 @@ topics of this project.
 5th group: Hybrid recommendation Engine  
 
 ## ADDITIONAL PROJECT INFORMATION/TASK
-You will have to work as a team to build a powerful Hybrid recommendation Engine.
-All your work should be well documented and your code highly readable.
-Document your job on Github with all necessary files and Project Description.
+You will have to work as a team to build a powerful Hybrid recommendation Engine.  
+
+All your work should be well documented and your code highly readable.  
+
+Document your job on Github with all necessary files and Project Description.  
+
 Write an article about this project and publish it on Medium.
 
 ## ADDITIONAL USEFUL LINKS
-https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/
-https://www.cs.toronto.edu/~rsalakhu/papers/rbmcf.pdf
-https://arxiv.org/pdf/1511.06939.pdf
-https://medium.com/@tanaykarmarkar/explainable-restricted-boltzmann-machine-for-collaborative-filtering-6f011035352d
-https://towardsdatascience.com/paper-summary-matrix-factorization-techniques-for-recommender-systems-82d1a7ace74
+https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/  
+https://www.cs.toronto.edu/~rsalakhu/papers/rbmcf.pdf  
+https://arxiv.org/pdf/1511.06939.pdf  
+https://medium.com/@tanaykarmarkar/explainable-restricted-boltzmann-machine-for-collaborative-filtering-6f011035352d  
+https://towardsdatascience.com/paper-summary-matrix-factorization-techniques-for-recommender-systems-82d1a7ace74  
