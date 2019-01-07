@@ -56,13 +56,13 @@ def get_clean_data(path='./data/'):
     # anything > 2018 don't make sense either
     df_books.pub_year[
         (df_books.pub_year > 2018) | (df_books.pub_year == 0)
-        ] = 0
+        ] = None
 
     # Age 0 doesnt make sense and is most likely unknown or unrecorded value
     # Age > 122 doesnt make sense either as 122 is the recorded oldest person
     # on earth. (Prolly a lot of those over 100 are errors too but we cant
     # tell)
-    df_users.age[df_users.age > 122] = 0
+    df_users.age[(df_users.age == 0) | (df_users.age > 122)] = None
     df_users["country"] = df_users.location.apply(get_country)
     df_users["province"] = df_users.location.apply(get_province)
     return df_books, df_users, df_ratings
