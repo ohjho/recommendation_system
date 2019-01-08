@@ -13,6 +13,7 @@ The catch is that our rating matrix `R` is sparse. Therefore, there's an inheren
 ![loss function with lambda](https://static1.squarespace.com/static/51af568be4b0b9ab836e2474/t/590f6921f5e23141033c2260/1494186587114/)
 
 SVD, **Singular Value Decomposition**, is another method to solve for latent factors. Here, SVD decompose the rating matrix `A` into two unitary matrices `U` and `V` and a diagonal matrix `sigma`:  
+
 ![image of SVD](https://cdn-images-1.medium.com/max/800/1*W4MnB2hyvgqedLmwJLrpqw.png)
 
 `U` represents how much each user like each *feature*. `sigma`, the diagonal matrix, is essentially the weights of each *feature*. And `V` represents how relevant each *feature* is to each movie.
