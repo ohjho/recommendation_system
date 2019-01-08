@@ -1,6 +1,6 @@
 # How Latent Factor Analysis Work
 
-Latent factors refer to the underlying factors `d` that actually help to explained the observed data (book ratings `R` in our case).
+Latent factors refer to the underlying factors `d` that actually help to explained the observed data (book ratings `R` in our case).  
 ![Image of Latent Factor Matrix](https://static1.squarespace.com/static/51af568be4b0b9ab836e2474/t/590c6b44d1758ebf2c442418/1493986118765/)
 
 For a given user `i`, his rating of book `j`, where `k` is the number of factors:  
