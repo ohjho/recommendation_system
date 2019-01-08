@@ -4,7 +4,7 @@ Xccelerate Data Science Bootcamp Collaborative Project: 4 flavours of recommenda
 See the project's details [here](project_details.md)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![python versions](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue.svg)]
+![python versions](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue.svg)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 ## How to Use this repo
@@ -59,6 +59,6 @@ df = merge_data_frame(10,10)
 ## Modeling
 ### A. Content-based Filtering
 ### B. Collaborative Filtering
-### [C. Latent Factor Analysis][latent_factor_analysis/]
+### [C. Latent Factor Analysis](latent_factor_analysis/)
 
 [url_virtualenv]: https://virtualenvwrapper.readthedocs.io/en/latest/
