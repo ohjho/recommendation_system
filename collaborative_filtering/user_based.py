@@ -5,16 +5,19 @@ Created on Mon Jan  7 11:34:47 2019
 @author: Ray
 """
 #%% IMPORT
+import sys
 import pandas as pd
 from Data_cleaning import get_clean_data
-from merge_data import merge_data_frame
+
+sys.path.insert(0, '../')
 
 bookFile='../data/BX-Books.csv'
 books=pd.read_csv(bookFile,sep=";",header=0,error_bad_lines=False, usecols=[0,1,2],index_col=0,names=['isbn',"title","author"],encoding='ISO-8859-1')
+
 #%%
-df_books, df_users, df_ratings = get_clean_data(path='../data/')
-df_merges = merge_data_frame()
-data = df_merges.copy()
+_, _, df_ratings = get_clean_data(path='../data/')
+
+data = df_ratings.copy()
 data = data.drop(['location',
               'age',
               'country',
