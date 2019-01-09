@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def convert_year(in_string):
     '''Returns input as integer if possible, else None'''
     try:
@@ -7,19 +8,42 @@ def convert_year(in_string):
     except:
         return None
 
+
 def get_country(in_string):
     '''Return the country element from the location.'''
+    nulls = ['', 'n/a', 'x', 'far away...', 'universe', 'n/a - on the road']
+    usa = ['usa', 'us', 'united states', 'united state', 'u.s.a.']
+    filipines = ['philippines', 'phillipines']
+    catalonia = ['catalonia', 'catalunya']
+    italy = ['italy', 'italia']
     try:
-        return in_string.rsplit(',', 1)[1].strip('.;-')
+        # the [1:] index because all the split results will contain
+        # a space in the beginning
+        country = in_string.rsplit(',', 1)[1][1:]
     except:
-        return in_string
+        country = None
+    if country in nulls:
+        country = None
+    elif country in usa:
+        country = 'usa'
+    elif country in filipines:
+        country = 'philippines'
+    elif country in catalonia:
+        country = 'catalonia'
+    elif country in italy:
+        country = 'italy'
+    if country is not None:
+        country = country.strip('"')
+    return country
+
 
 def get_province(in_string):
     '''Return the province/state/area element from the location'''
     try:
-        return in_string.rsplit(',', 2)[1].strip('.;-')
+        return in_string.rsplit(',', 2)[1][1:]
     except:
         return None
+
 
 def get_clean_data(path='./data/'):
     '''
@@ -67,6 +91,7 @@ def get_clean_data(path='./data/'):
     df_users["province"] = df_users.location.apply(get_province)
     return df_books, df_users, df_ratings
 
+
 ################################################################################
 def get_merged_data_frame(user_argv=-1, isbn_argv=-1, path='./data/'):
     '''
@@ -77,7 +102,6 @@ def get_merged_data_frame(user_argv=-1, isbn_argv=-1, path='./data/'):
         number of ratings.
     :return: dataframe
     '''
-
 
     df_books, df_users, df_ratings = get_clean_data(path=path)
 
