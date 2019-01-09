@@ -38,7 +38,7 @@ To get 3 separate dataframes, do this
 from data_cleaning import get_clean_data
 df_books, df_users, df_ratings = get_clean_data()
 ```
-And if the csv files are not under "/data/", use the path argument.
+And if the csv files are not under `data/`, use the path argument.
 
 To get one merged dataframe, do this:
 ```
@@ -51,8 +51,8 @@ And if the csv files are not under "/data/", use the path argument.
 
 
 ## Modeling
-### A. Content-based Filtering
-### B. Collaborative Filtering
+### [A. Content-based Filtering](content_based_filtering/)
+### [B. Collaborative Filtering](collaborative_filtering/)
 ### [C. Latent Factor Analysis](latent_factor_analysis/)
 
 [url_virtualenv]: https://virtualenvwrapper.readthedocs.io/en/latest/
