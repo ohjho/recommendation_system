@@ -1,5 +1,5 @@
 # recommendation_system
-Xccelerate Data Science Bootcamp Collaborative Project: 4 flavours of recommendation systems
+Xccelerate Data Science Bootcamp Collaborative Project: 4 flavours of recommendation systems using the [Booking Crossing Dataset](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) which is also included [here](data/) in this repo.
 
 See the project's details [here](project_details.md)
 
@@ -32,29 +32,23 @@ $ jupyter notebook
 ## Data Cleaning
 #### How to use data_cleaning.py
 The script data_cleaning.py will import the datasets and clean the data.
-Do this
+
+To get 3 separate dataframes, do this
 ```
 from data_cleaning import get_clean_data
 df_books, df_users, df_ratings = get_clean_data()
 ```
-
 And if the csv files are not under "/data/", use the path argument.
 
-#### How to use merge_data.py
-The script merge_data.py will do again the data_cleaning.py. You can input or not input the argv for the merge_data_frame function.
+To get one merged dataframe, do this:
+```
+from data_cleaning import get_merged_data_frame
+df_merged = get_merged_data_frame(user_argv=user_threshold, isbn_argv=book_threshold)
+```
+where user_threshold is the threshold to filter out users with fewer than this number of books rated.
+books_threshold is the books counterpart
+And if the csv files are not under "/data/", use the path argument.
 
-The user_argv and isbn_argv default is -1, means do not do any filtering.
-
-Here is the demo code to use:
-```
-from merge_data import merge_data_frame
-df = merge_data_frame()
-```
-OR
-```
-from merge_data import merge_data_frame
-df = merge_data_frame(10,10)
-```
 
 ## Modeling
 ### A. Content-based Filtering

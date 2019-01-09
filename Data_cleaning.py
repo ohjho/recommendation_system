@@ -66,3 +66,40 @@ def get_clean_data(path='./data/'):
     df_users["country"] = df_users.location.apply(get_country)
     df_users["province"] = df_users.location.apply(get_province)
     return df_books, df_users, df_ratings
+
+################################################################################
+def get_merged_data_frame(user_argv=-1, isbn_argv=-1, path='./data/'):
+    '''
+    Returns a merged dataframe of users, books, ratings.
+    :param user_argv: integer, threshold to filter users fewer than this number of
+        books rated
+    :param isbn_argv: integer, threshold to filter books that has fewer than this
+        number of ratings.
+    :return: dataframe
+    '''
+
+
+    df_books, df_users, df_ratings = get_clean_data(path=path)
+
+    # merge ratings table with users table by user_ID
+    df_merges = pd.merge(df_ratings, df_users, on='user')
+
+    # based on the previous df_merges merge with books table by isbn
+    df_merges = pd.merge(df_merges, df_books, on='isbn')
+
+    # find user that has more than [No. of review] and filter it
+    df_merges['user'] = df_merges.groupby('isbn')['user'].filter(lambda x: len(x) > user_argv)
+
+    # find books that has more than [No. of users] and filter it
+    df_merges['isbn'] = df_merges.groupby('user')['isbn'].filter(lambda x: len(x) > isbn_argv)
+
+    # drop out the users that is null
+    df_merges = df_merges[pd.notnull(df_merges['user'])]
+
+    # drop out the books that is null
+    df_merges = df_merges[pd.notnull(df_merges['isbn'])]
+
+    # convert the user_ID to string type
+    df_merges['user'] = df_merges['user'].astype('int').astype('str')
+
+    return df_merges

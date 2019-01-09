@@ -19,6 +19,7 @@ SVD, **Singular Value Decomposition**, is another method to solve for latent fac
 `U` represents how much each user like each *feature*. `sigma`, the diagonal matrix, is essentially the weights of each *feature*. And `V` represents how relevant each *feature* is to each movie.
 
 ## Readings:
+* [How Netflix recommend movies?](https://www.youtube.com/watch?v=ZspR5PZemcs&t=186s) is a great intro video on YouTube by Luis Serrano, Head of Content in AI and Data Science at Udacity
 * [Recommendations](http://www.ilanman.io/blog/2017/5/7/recommendations) by Ilan Man, Head of Data at TrialSpark
 * [Matrix Factorization: A Simple Tutorial and Implementation in Python](http://www.albertauyeung.com/post/python-matrix-factorization/) by Albert Yeung, ML engineer at zwoop
 * [Movie Recommendation using Regularized Matrix factorization](https://github.com/metpallyv/MovieRecommendation): a GitHub Repo
