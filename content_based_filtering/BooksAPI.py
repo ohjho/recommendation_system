@@ -68,7 +68,7 @@ def Main():
     isbn_list = GetISBN(dir_path + '/isbn_toscrape.csv')
     print(f'We have {len(isbn_list)} ISBNs')
 
-    batch_size = 10
+    batch_size = 200
     isbns_batches = chunks( isbn_list, batch_size)
 
     for i, batch in enumerate(isbns_batches):
