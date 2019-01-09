@@ -1,5 +1,5 @@
 # recommendation_system
-Xccelerate Data Science Bootcamp Collaborative Project: 4 flavours of recommendation systems
+Xccelerate Data Science Bootcamp Collaborative Project: 4 flavours of recommendation systems using the [Booking Crossing Dataset](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) which is also included [here](data/) in this repo.
 
 See the project's details [here](project_details.md)
 
