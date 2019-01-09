@@ -1,5 +1,10 @@
 # How Latent Factor Analysis Work
 
+Luis Serrano made a great intro video explaining the concept and gradient descent:
+<iframe width="420" height="345" src="https://www.youtube.com/embed/ZspR5PZemcs">
+</iframe>
+
+
 Latent factors refer to the underlying factors `d` that actually help to explained the observed data (book ratings `R` in our case).  
 ![Image of Latent Factor Matrix](https://static1.squarespace.com/static/51af568be4b0b9ab836e2474/t/590c6b44d1758ebf2c442418/1493986118765/)
 
