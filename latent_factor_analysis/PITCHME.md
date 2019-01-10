@@ -111,3 +111,25 @@ _       __     __                                  __             __
 @snapend
 <br />
 ![image of surprise library](http://surpriselib.com/logo_white.svg)
++++
+### SVD vs SVD++
+@div[top-50 fragment]
+![svd rmse](latent_factor_analysis/pitch_assets/svd_rmse.png)
+@divend
+@div[bottom-50 fragment]
+![svdpp rmse](latent_factor_analysis/pitch_assets/svdpp_rmse.png)
+@divend
+---
+<!-- Our Implementation Stack
+
+
+   ____                ____                __                          __        __  _           
+  / __ \__  _______   /  _/___ ___  ____  / /__  ____ ___  ___  ____  / /_____ _/ /_(_)___  ____
+ / / / / / / / ___/   / // __ `__ \/ __ \/ / _ \/ __ `__ \/ _ \/ __ \/ __/ __ `/ __/ / __ \/ __ \
+/ /_/ / /_/ / /     _/ // / / / / / /_/ / /  __/ / / / / /  __/ / / / /_/ /_/ / /_/ / /_/ / / / /
+\____/\__,_/_/     /___/_/ /_/ /_/ .___/_/\___/_/ /_/ /_/\___/_/ /_/\__/\__,_/\__/_/\____/_/ /_/
+                                /_/                                                              
+
+-->
+### Our implementation
++++
