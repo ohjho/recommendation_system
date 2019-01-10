@@ -5,18 +5,18 @@ Data Set: [provided](/data/)
 
 ## Table of Content
  * [Project Details](#project-details)
-   + [Goal of this Collaborative Project:](#goal-of-this-collaborative-project-)
+   + [Goal of this Collaborative Project:](#goal-of-this-collaborative-project)
    + [About the dataset](#about-the-dataset)
    + [PROJECT TASKS](#project-tasks)
      - [1- Explore your dataset](#1--explore-your-dataset)
-     - [2- MODELLING, Recommendation Engine](#2--modelling--recommendation-engine)
+     - [2- MODELLING, Recommendation Engine](#2--modelling-recommendation-engine)
        * [A. Content-based Filtering Approach](#a-content-based-filtering-approach)
        * [B. Collaborative Filtering Approach](#b-collaborative-filtering-approach)
-       * [C. Collaborative Filtering Advanced: Matrix Factorization](#c-collaborative-filtering-advanced--matrix-factorization)
+       * [C. Collaborative Filtering Advanced: Matrix Factorization](#c-collaborative-filtering-advanced-matrix-factorization)
        * [D. Evaluate your Recommendation Engines](#d-evaluate-your-recommendation-engines)
        * [E. Build a hybrid Recommender Engine](#e-build-a-hybrid-recommender-engine)
      - [3- PRESENTATION](#3--presentation)
- * [ADDITIONAL PROJECT INFORMATION/TASK](#additional-project-information-task)
+ * [ADDITIONAL PROJECT INFORMATION/TASK](#additional-project-informationtask)
  * [ADDITIONAL USEFUL LINKS](#additional-useful-links)
 
 ### Goal of this Collaborative Project:
