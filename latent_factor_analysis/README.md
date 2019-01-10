@@ -22,10 +22,10 @@ Here, SVD decompose the dense rating matrix `A` into two unitary matrices `U` an
 `U` represents how much each user like each *feature*. `sigma`, the diagonal matrix, is essentially the weights of each *feature*. And `V` represents how relevant each *feature* is to each movie.
 
 ## SVD for Latent Factor Analysis
-As [Hug][url_hug_p4] said, *SVD* in the context of recommendation systems are **not** real SVD. It is only *SVD* inspired.
+As [Hug][url_hug_p4] mentioned, *SVD* in the context of recommendation systems is **not** real SVD. It is only *SVD* inspired.
 
 ## Our model for Latent Factor Analysis
-Building on [Hug's work][url_hug_p4] and many others in the data science community, we also used **SGD (stochastic gradient descent)** to decompose the **sparse user rating matrix** in order to predict users' ratings and create recommendation.
+Building on [Hug's work][url_hug_p4] and many others in the data science community, we also used **SGD (stochastic gradient descent)** to decompose the **sparse user rating matrix** in order to predict users' ratings and create recommendations.
 
 [Our Juypter Notebook]() illustrated the approach we took, and a comparison to Hug's [surprise package's][url_surprise] results (looking primarily on RMSE).
 
