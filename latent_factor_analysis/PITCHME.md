@@ -91,12 +91,10 @@ _       __     __                                  __             __
 -->
 ### Stochastic Gradient Descent
 +++
-@snap[north-east]
 ### Stochastic Gradient Descent
-@snapend
 <br />
 <img src = 'https://cdn-images-1.medium.com/max/800/1*Sa5kGcZIVNTLjrI8P-YsSQ.gif' height = '450' />
-
+---
 <!-- Surprise Stack
 
 
