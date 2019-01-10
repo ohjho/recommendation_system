@@ -2,21 +2,6 @@ import requests, json, os, time
 from urllib.parse import urlencode
 
 dir_path = os.path.dirname( os.path.realpath(__file__))
-gg_apikey = 'AIzaSyD6L7oqtx2VvGWfMHwfdIw7NmZm1O13Utw'
-
-def GoogleBookAPI():
-    url = 'https://www.googleapis.com/books/v1/volumes'
-    headers = { 'Accept': 'application/json'}
-    params = {
-        'key': gg_apikey,
-        'q': 'isbn:0002005018,0195153448'
-    }
-    data = requests.post(url , headers = headers, data = params)
-
-    if data.status_code == 200:
-        print( data.text)
-    else:
-        print(f'Request failed with status code: {data.status_code}')
 
 def encode_isbn( isbn_list):
     str_isbn = ''
@@ -25,6 +10,10 @@ def encode_isbn( isbn_list):
     return str_isbn[:-1]
 
 def OpenLibAPI( isbn_list , verbose = False):
+    '''
+    Uses the Open Library Books API
+    Doc: https://openlibrary.org/dev/docs/api/books
+    '''
     url = 'http://openlibrary.org/api/books?'
     str_isbn = encode_isbn(isbn_list)
     params = {
