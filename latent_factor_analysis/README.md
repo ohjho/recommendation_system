@@ -27,7 +27,7 @@ As [Hug][url_hug_p4] mentioned, *SVD* in the context of recommendation systems i
 ## Our model for Latent Factor Analysis
 Building on [Hug's work][url_hug_p4] and many others in the data science community, we also used **SGD (stochastic gradient descent)** to decompose the **sparse user rating matrix** in order to predict users' ratings and create recommendations.
 
-[Our Juypter Notebook]() illustrated the approach we took, and a comparison to Hug's [surprise package's][url_surprise] results (looking primarily on RMSE).
+[Our Juypter Notebook]() illustrated the approach we took, and a comparison to Hug's [surprise package's][url_surprise] results (looking primarily on RMSE). Presentation slides are [here](https://gitpitch.com/ohjho/recommendation_system/master?p=latent_factor_analysis)
 
 ## Readings:
 * [How Netflix recommend movies?](https://www.youtube.com/watch?v=ZspR5PZemcs&t=186s) is a great intro video on YouTube by Luis Serrano, Head of Content in AI and Data Science at Udacity
