@@ -56,14 +56,11 @@ surprise-svd++:
 
 +++
 ### Singular Vector Decomposition
+<img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '250' />
 
-@div[top-20 fragment]
-<img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '100' />
-@divend
-
-@div[bottom-80 fragment]
++++
+### Singular Vector Decomposition
 ![SVD Img](https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png)
-@divend
 
 ---?image=https://source.unsplash.com/tMvuB9se2uQ
 <!-- SGD stack
@@ -79,14 +76,14 @@ surprise-svd++:
 -->
 ### Stochastic Gradient Descent
 
-<img src='https://cdn-images-1.medium.com/max/800/1*Sa5kGcZIVNTLjrI8P-YsSQ.gif' width='250' />
+<img src='https://cdn-images-1.medium.com/max/800/1*Sa5kGcZIVNTLjrI8P-YsSQ.gif' width='450' />
 +++
 ### Stochastic Gradient Descent
 @ul
-1. Randomly initialize `P` and `Q`
-2. For a given `epoch`, minimize:
+* Randomly initialize `P` and `Q`
+* For a given `epoch`, minimize:
   ![sgd loss function](/latent_factor_analysis/pitch_assets/sgd_lossfun.jpg)
-  and adjust `p(u)` and `q(i)` according to:
+* adjust `p(u)` and `q(i)` at each `epoch` according to:
   ![sgd derivatives](/latent_factor_analysis/pitch_assets/sgd_derivatives.jpg)
 @ulend
 
