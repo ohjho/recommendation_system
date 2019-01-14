@@ -143,7 +143,7 @@ surprise-svd++:
 ---?image=https://source.unsplash.com/i0K3-IHiXYI
 ### Conclusion
 @div[left-50 fragment]
-Pro
+#### Pro
 @ul
 * Users or Books features not necessary
 * easy to evaluate and understand
@@ -151,7 +151,7 @@ Pro
 @divend
 
 @div[right-50 fragment]
-Con
+#### Con
 @ul
 * cannot generate insights from the factors
 * requires at least 100 data points
