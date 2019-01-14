@@ -11,7 +11,7 @@ _       __     __                                  __             __
 #### @color[black](aka Matrix Factorization)
 +++
 @snap[north]
-### @color[black](Overview)
+### Overview
 @snapend
 @snap[west]
 @ul
@@ -22,21 +22,9 @@ _       __     __                                  __             __
 * Our Implementation
 @ulend
 @snapend
-+++
-### Results Comparsion
-Recommendations for user `276847` using...
 
-@div[left-50 fragment]
-surpise-svd:
-![svdpp results](latent_factor_analysis/pitch_assets/svdpp_recommend.png)
-@divend
 
-@div[right-50 fragment]
-surprise-svd++:
-![fake our model results](latent_factor_analysis/pitch_assets/svd_recommend.png)
-@divend
-
----?image=https://source.unsplash.com/iar-afB0QQw
+---?image=https://source.unsplash.com/jgKgekpnmCI
 <!-- Matrix Factorization
 
 
@@ -50,22 +38,19 @@ surprise-svd++:
 
 -->
 ### Matrix Factorization
-+++
++++?image=https://source.unsplash.com/jgKgekpnmCI
 #### Matrix Factorization
 ![mat factorization image](https://cdn-images-1.medium.com/max/1075/1*2i-GJO7JX0Yz6498jUvhEg.png)
 
-+++
++++?image=https://source.unsplash.com/jgKgekpnmCI
 ### Singular Vector Decomposition
+<img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '250' />
 
-@div[top-20 fragment]
-<img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '200' />
-@divend
++++?image=https://source.unsplash.com/jgKgekpnmCI
+### Singular Vector Decomposition
+<img src='https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png' height = '450' />
 
-@div[bottom-80 fragment]
-![SVD Img](https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png)
-@divend
-
----?image=https://source.unsplash.com/jG1z5o7NCq4/
+---?image=https://source.unsplash.com/tMvuB9se2uQ
 <!-- SGD stack
 
 
@@ -79,9 +64,22 @@ surprise-svd++:
 -->
 ### Stochastic Gradient Descent
 
-![img of SGD](https://cdn-images-1.medium.com/max/800/1*Sa5kGcZIVNTLjrI8P-YsSQ.gif)
-+++
----
+<img src='https://cdn-images-1.medium.com/max/800/1*Sa5kGcZIVNTLjrI8P-YsSQ.gif' width='450' />
++++?image=https://source.unsplash.com/tMvuB9se2uQ
+### Stochastic Gradient Descent
+@ul
+* Randomly initialize `P` and `Q`
+* For a given `epoch`, minimize:  
+
+![sgd loss function](latent_factor_analysis/pitch_assets/sgd_lossfun.png)
++++?image=https://source.unsplash.com/tMvuB9se2uQ
+### Stochastic Gradient Descent
+* adjust `p(u)` and `q(i)` at each `epoch` according to:  
+
+![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
+@ulend
+
+---?image=https://source.unsplash.com/iVVBVb2RqLc
 <!-- Surprise Stack
 
 
@@ -93,20 +91,31 @@ surprise-svd++:
                /_/                       
 
 -->
-@snap[north]
 ### surprise
-@snapend
 <br />
-![image of surprise library](http://surpriselib.com/logo_white.svg)
-+++
+![image of surprise library](latent_factor_analysis/pitch_assets/surprise_logo.png)
++++?image=https://source.unsplash.com/iVVBVb2RqLc
 ### SVD vs SVD++
 @div[top-50 fragment]
-![svd rmse](latent_factor_analysis/pitch_assets/svd_rmse.png)
+<img src='https://github.com/ohjho/recommendation_system/raw/master/latent_factor_analysis/pitch_assets/svd_rmse.png' height = '100' />
 @divend
 @div[bottom-50 fragment]
-![svdpp rmse](latent_factor_analysis/pitch_assets/svdpp_rmse.png)
+<img src='https://github.com/ohjho/recommendation_system/raw/master/latent_factor_analysis/pitch_assets/svdpp_rmse.png' height = '100' />
 @divend
----
++++?image=https://source.unsplash.com/iVVBVb2RqLc
+### SVD vs SVD++
+Recommendations for user `276847` using...
+
+@div[left-50 fragment]
+surpise-svd:
+![svdpp results](latent_factor_analysis/pitch_assets/svdpp_recommend.png)
+@divend
+
+@div[right-50 fragment]
+surprise-svd++:
+![fake our model results](latent_factor_analysis/pitch_assets/svd_recommend.png)
+@divend
+---?image=https://source.unsplash.com/JFeOy62yjXk
 <!-- Our Implementation Stack
 
 
@@ -119,4 +128,43 @@ surprise-svd++:
 
 -->
 ### Our implementation
-+++
++++?image=https://source.unsplash.com/JFeOy62yjXk
+### Our implementation
+#### Biases
+![our fun](latent_factor_analysis/pitch_assets/our_math.png)
++++?image=https://source.unsplash.com/JFeOy62yjXk
+### Our implementation
+#### Evaluation
+![our rmse](latent_factor_analysis/pitch_assets/our_rmse.png)
++++?image=https://source.unsplash.com/JFeOy62yjXk
+### Our implementation
+#### Recommendation
+![our recommendation](latent_factor_analysis/pitch_assets/our_recommendation.png)
+---?image=https://source.unsplash.com/i0K3-IHiXYI
+### Conclusion
+@div[left-50 fragment]
+Pros
+@ul
+* Users or Books features not necessary
+* easy to evaluate and understand
+@ulend
+@divend
+
+@div[right-50 fragment]
+Cons
+@ul
+* cannot generate insights from the factors
+* requires at least 100 data points
+* Scaling
+* Cold Start
+* computationally intensive
+@ulend
+@divend
++++?image=https://source.unsplash.com/i0K3-IHiXYI
+### Further Development
+@ul
+* dataset with **time stamps**
+* confidence interval
+* Grid Search
+* KFold Evaluation
+@ulend
