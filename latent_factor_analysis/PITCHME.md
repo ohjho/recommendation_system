@@ -82,14 +82,15 @@ surprise-svd++:
 @ul
 * Randomly initialize `P` and `Q`
 * For a given `epoch`, minimize:  
-  ![sgd loss function](latent_factor_analysis/pitch_assets/sgd_lossfun.png)
+
+![sgd loss function](latent_factor_analysis/pitch_assets/sgd_lossfun.png)
 +++
 ### Stochastic Gradient Descent
 * adjust `p(u)` and `q(i)` at each `epoch` according to:  
-  ![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
+![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
 @ulend
 
----?image=https://source.unsplash.com/qDY9ahp0Mto
+---?image=https://source.unsplash.com/iVVBVb2RqLc
 <!-- Surprise Stack
 
 
