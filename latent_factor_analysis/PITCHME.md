@@ -11,7 +11,7 @@ _       __     __                                  __             __
 #### @color[black](aka Matrix Factorization)
 +++
 @snap[north]
-### @color[black](Overview)
+### Overview
 @snapend
 @snap[west]
 @ul
@@ -58,14 +58,14 @@ surprise-svd++:
 ### Singular Vector Decomposition
 
 @div[top-20 fragment]
-<img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '200' />
+<img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '100' />
 @divend
 
 @div[bottom-80 fragment]
 ![SVD Img](https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png)
 @divend
 
----?image=https://source.unsplash.com/jG1z5o7NCq4/
+---?image=https://source.unsplash.com/tMvuB9se2uQ
 <!-- SGD stack
 
 
@@ -79,8 +79,17 @@ surprise-svd++:
 -->
 ### Stochastic Gradient Descent
 
-![img of SGD](https://cdn-images-1.medium.com/max/800/1*Sa5kGcZIVNTLjrI8P-YsSQ.gif)
+<img src='https://cdn-images-1.medium.com/max/800/1*Sa5kGcZIVNTLjrI8P-YsSQ.gif' width='250' />
 +++
+### Stochastic Gradient Descent
+@ul
+1. Randomly initialize `P` and `Q`
+2. For a given `epoch`, minimize:
+  ![sgd loss function](/latent_factor_analysis/pitch_assets/sgd_lossfun.jpg)
+  and adjust `p(u)` and `q(i)` according to:
+  ![sgd derivatives](/latent_factor_analysis/pitch_assets/sgd_derivatives.jpg)
+@ulend
+
 ---
 <!-- Surprise Stack
 
