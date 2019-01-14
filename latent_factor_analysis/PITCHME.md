@@ -22,19 +22,7 @@ _       __     __                                  __             __
 * Our Implementation
 @ulend
 @snapend
-+++
-### Results Comparsion
-Recommendations for user `276847` using...
 
-@div[left-50 fragment]
-surpise-svd:
-![svdpp results](latent_factor_analysis/pitch_assets/svdpp_recommend.png)
-@divend
-
-@div[right-50 fragment]
-our SGD:
-![our results](latent_factor_analysis/pitch_assets/our_recommendation.png)
-@divend
 
 ---?image=https://source.unsplash.com/jgKgekpnmCI
 <!-- Matrix Factorization
@@ -152,3 +140,22 @@ surprise-svd++:
 ### Our implementation
 #### Recommendation
 ![our recommendation](latent_factor_analysis/pitch_assets/our_recommendation.png)
++++
+### Conclusion
+@div[left-50 fragment]
+Pro
+@ul
+* Users or Books features not necessary
+@ulend
+@divend
+
+@div[right-50 fragment]
+Con
+@ul
+* cannot generate insights from the factors
+* requires at least 100 data points
+* Scaling
+* Cold Start
+* computationally intensive
+@ulend
+@divend

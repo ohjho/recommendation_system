@@ -39,6 +39,10 @@ Building on [Hug's work][url_hug_p4] and many others in the data science communi
 * [A Gentle Guide to Recommender Systems with Surprise](https://kerpanic.wordpress.com/2018/03/26/a-gentle-guide-to-recommender-systems-with-surprise/) with example code on Github
 * [Gradient Descent in Python](https://towardsdatascience.com/gradient-descent-in-python-a0d07285742f) by Toward Data Science with sample code for GD, SGD, and mini batch SGD
 
+### Advance:
+* [Kat Bailey](http://katbailey.github.io/about/) wrote also implemented [Matrix Factorization in TensorFlow](https://github.com/katbailey/factorizer) along with this awesome [GitPitch](http://katbailey.github.io/mf/#/title)
+* [A Gentle Introduction to Recommender Systems with Implicit Feedback](https://jessesw.com/Rec-System/) by Jesse Steinweg-Woods, a Senior Data Scientist at Honey
+
 [url_hug_p3]: http://nicolas-hug.com/blog/matrix_facto_3
 [url_hug_p4]: http://nicolas-hug.com/blog/matrix_facto_4
 [url_surprise]: http://surpriselib.com/
