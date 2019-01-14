@@ -36,7 +36,7 @@ our SGD:
 ![our results](latent_factor_analysis/pitch_assets/our_recommendation.png)
 @divend
 
----?image=https://source.unsplash.com/dzCBKa8rIAM
+---?image=https://source.unsplash.com/jgKgekpnmCI
 <!-- Matrix Factorization
 
 
@@ -50,15 +50,15 @@ our SGD:
 
 -->
 ### Matrix Factorization
-+++?image=https://source.unsplash.com/dzCBKa8rIAM
++++?image=https://source.unsplash.com/jgKgekpnmCI
 #### Matrix Factorization
 ![mat factorization image](https://cdn-images-1.medium.com/max/1075/1*2i-GJO7JX0Yz6498jUvhEg.png)
 
-+++?image=https://source.unsplash.com/dzCBKa8rIAM
++++?image=https://source.unsplash.com/jgKgekpnmCI
 ### Singular Vector Decomposition
 <img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '250' />
 
-+++?image=https://source.unsplash.com/dzCBKa8rIAM
++++?image=https://source.unsplash.com/jgKgekpnmCI
 ### Singular Vector Decomposition
 <img src='https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png' height = '450' />
 
