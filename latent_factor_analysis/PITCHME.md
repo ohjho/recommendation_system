@@ -36,7 +36,7 @@ surprise-svd++:
 ![fake our model results](latent_factor_analysis/pitch_assets/svd_recommend.png)
 @divend
 
----?image=https://source.unsplash.com/iar-afB0QQw
+---?image=https://source.unsplash.com/dzCBKa8rIAM
 <!-- Matrix Factorization
 
 
@@ -87,7 +87,7 @@ surprise-svd++:
 +++
 ### Stochastic Gradient Descent
 * adjust `p(u)` and `q(i)` at each `epoch` according to:  
-![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
+  ![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
 @ulend
 
 ---?image=https://source.unsplash.com/iVVBVb2RqLc
@@ -108,7 +108,7 @@ surprise-svd++:
 +++
 ### SVD vs SVD++
 @div[top-50 fragment]
-![svd rmse](latent_factor_analysis/pitch_assets/svd_rmse.png)
+<img src='latent_factor_analysis/pitch_assets/svd_rmse.png' height = '100' />
 @divend
 @div[bottom-50 fragment]
 ![svdpp rmse](latent_factor_analysis/pitch_assets/svdpp_rmse.png)
