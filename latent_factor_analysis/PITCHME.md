@@ -140,12 +140,13 @@ surprise-svd++:
 ### Our implementation
 #### Recommendation
 ![our recommendation](latent_factor_analysis/pitch_assets/our_recommendation.png)
-+++
+---?image=https://source.unsplash.com/i0K3-IHiXYI
 ### Conclusion
 @div[left-50 fragment]
 Pro
 @ul
 * Users or Books features not necessary
+* easy to evaluate and understand
 @ulend
 @divend
 
@@ -159,3 +160,11 @@ Con
 * computationally intensive
 @ulend
 @divend
++++?image=https://source.unsplash.com/i0K3-IHiXYI
+### Further Development
+@ul
+* dataset with **time stamps**
+* confidence interval
+* Grid Search
+* KFold Evaluation
+@ulend
