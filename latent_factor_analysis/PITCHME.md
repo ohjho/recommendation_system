@@ -105,7 +105,7 @@ surprise-svd++:
 ### surprise
 @snapend
 <br />
-![image of surprise library](latent_factor_analysis/pitch_assets/urprise_logo.png)
+![image of surprise library](latent_factor_analysis/pitch_assets/surprise_logo.png)
 +++
 ### SVD vs SVD++
 @div[top-50 fragment]
