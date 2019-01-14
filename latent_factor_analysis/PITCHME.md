@@ -7,10 +7,12 @@ _       __     __                                  __             __
 |__/|__/\___/_/\___/\____/_/ /_/ /_/\___/  /____/\__/\__,_/\___/_/|_|  
 
 -->
-### Latent Factor Analysis
-#### aka Matrix Factorization
-+++?image=https://source.unsplash.com/Oaqk7qqNh_c
-### Overview
+### @color[black](Latent Factor Analysis)
+#### @color[black](aka Matrix Factorization)
++++
+@snap[north]
+### @color[black](Overview)
+@snapend
 @snap[west]
 @ul
 * Matrix Factorization
@@ -20,7 +22,7 @@ _       __     __                                  __             __
 * Our Implementation
 @ulend
 @snapend
-+++?image=https://source.unsplash.com/Oaqk7qqNh_c
++++
 ### Results Comparsion
 Recommendations for user `276847` using...
 
@@ -56,7 +58,7 @@ surprise-svd++:
 ### Singular Vector Decomposition
 
 @div[top-20 fragment]
-![SVD formula](https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png)
+<img src='https://hadrienj.github.io/assets/images/2.8/singular-value-decomposition.png' height = '200' />
 @divend
 
 @div[bottom-80 fragment]
