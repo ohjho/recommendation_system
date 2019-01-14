@@ -32,8 +32,8 @@ surpise-svd:
 @divend
 
 @div[right-50 fragment]
-surprise-svd++:
-![fake our model results](latent_factor_analysis/pitch_assets/svd_recommend.png)
+our SGD:
+![our results]((latent_factor_analysis/pitch_assets/our_recommendation.png))
 @divend
 
 ---?image=https://source.unsplash.com/dzCBKa8rIAM
@@ -87,7 +87,8 @@ surprise-svd++:
 +++
 ### Stochastic Gradient Descent
 * adjust `p(u)` and `q(i)` at each `epoch` according to:  
-  ![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
+
+![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
 @ulend
 
 ---?image=https://source.unsplash.com/iVVBVb2RqLc
@@ -108,10 +109,23 @@ surprise-svd++:
 +++
 ### SVD vs SVD++
 @div[top-50 fragment]
-<img src='latent_factor_analysis/pitch_assets/svd_rmse.png' height = '100' />
+<img src='https://github.com/ohjho/recommendation_system/raw/master/latent_factor_analysis/pitch_assets/svd_rmse.png' height = '100' />
 @divend
 @div[bottom-50 fragment]
-![svdpp rmse](latent_factor_analysis/pitch_assets/svdpp_rmse.png)
+<img src='https://github.com/ohjho/recommendation_system/raw/master/latent_factor_analysis/pitch_assets/svdpp_rmse.png' height = '100' />
+@divend
++++
+### SVD vs SVD++
+Recommendations for user `276847` using...
+
+@div[left-50 fragment]
+surpise-svd:
+![svdpp results](latent_factor_analysis/pitch_assets/svdpp_recommend.png)
+@divend
+
+@div[right-50 fragment]
+surprise-svd++:
+![fake our model results](latent_factor_analysis/pitch_assets/svd_recommend.png)
 @divend
 ---
 <!-- Our Implementation Stack
@@ -127,3 +141,14 @@ surprise-svd++:
 -->
 ### Our implementation
 +++
+### Our implementation
+#### Biases
+![our fun](latent_factor_analysis/pitch_assets/our_math.png)
++++
+### Our implementation
+#### Evaluation
+![our rmse](latent_factor_analysis/pitch_assets/our_rmse.png)
++++
+### Our implementation
+#### Recommendation
+![our recommendation](latent_factor_analysis/pitch_assets/our_recommendation.png)
