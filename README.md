@@ -55,4 +55,7 @@ And if the csv files are not under "/data/", use the path argument.
 ### [B. Collaborative Filtering](collaborative_filtering/)
 ### [C. Latent Factor Analysis](latent_factor_analysis/)
 
+## Presentation
+[Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vS_66eVsJvcWqTHVCTL_b2OdbgJM_kzv6aeVGDCnuM1fWEqXcl9T-itl5lwVmtqbtArv_-5lZozOA4D/pub?start=false&loop=false&delayms=3000)
+
 [url_virtualenv]: https://virtualenvwrapper.readthedocs.io/en/latest/
