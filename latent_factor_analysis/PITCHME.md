@@ -60,7 +60,7 @@ surprise-svd++:
 
 +++
 ### Singular Vector Decomposition
-<img src='https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png' height = '500' />
+<img src='https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png' height = '450' />
 
 ---?image=https://source.unsplash.com/tMvuB9se2uQ
 <!-- SGD stack
@@ -82,11 +82,11 @@ surprise-svd++:
 @ul
 * Randomly initialize `P` and `Q`
 * For a given `epoch`, minimize:
-  ![sgd loss function](/latent_factor_analysis/pitch_assets/sgd_lossfun.png)
+  ![sgd loss function](latent_factor_analysis/pitch_assets/sgd_lossfun.png)
 +++
 ### Stochastic Gradient Descent
 * adjust `p(u)` and `q(i)` at each `epoch` according to:
-  ![sgd derivatives](/latent_factor_analysis/pitch_assets/sgd_derivatives.png)
+  ![sgd derivatives](latent_factor_analysis/pitch_assets/sgd_derivatives.png)
 @ulend
 
 ---
@@ -105,7 +105,7 @@ surprise-svd++:
 ### surprise
 @snapend
 <br />
-![image of surprise library](latent_factor_analysis/surprise_logo.png)
+![image of surprise library](latent_factor_analysis/pitch_assets/urprise_logo.png)
 +++
 ### SVD vs SVD++
 @div[top-50 fragment]
