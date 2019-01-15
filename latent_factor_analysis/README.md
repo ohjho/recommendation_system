@@ -42,6 +42,7 @@ Building on [Hug's work][url_hug_p4] and many others in the data science communi
 ### Advance:
 * [Kat Bailey](http://katbailey.github.io/about/) wrote also implemented [Matrix Factorization in TensorFlow](https://github.com/katbailey/factorizer) along with this awesome [GitPitch](http://katbailey.github.io/mf/#/title)
 * [A Gentle Introduction to Recommender Systems with Implicit Feedback](https://jessesw.com/Rec-System/) by Jesse Steinweg-Woods, a Senior Data Scientist at Honey
+* [Collaborative Filtering for Implicit Feedback Datasets](http://yifanhu.net/PUB/cf.pdf)
 
 [url_hug_p3]: http://nicolas-hug.com/blog/matrix_facto_3
 [url_hug_p4]: http://nicolas-hug.com/blog/matrix_facto_4
