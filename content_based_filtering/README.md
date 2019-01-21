@@ -1,17 +1,14 @@
-# Content- Based Filtering
-This is a simple way for user to implement the model of content-based of recommender system. We will use Python to illustrate the following. Basically, Content -Based Filtering is going to find the missing value with the recommender system.  
+# Content-Based Filtering
+We explored that there are 2 approaches for Content-Based Filtering.
 
-After the recommender is trained by the arrays, the list of documents exist and are more similar to the input document.
-The training process will be 3 main steps:
-¡E	Pre-processing: stopwords removal, stemming, html tag stripping
-¡E	Before Clustering : Document vectors formation using tf-idf
-¡E	Clustering: Find the cosine similarity scores between all document vectors
+## Approach 1: Recommendation through Description of the Content
+In this approach based on the description of the item, the user is suggested an item. The description goes deeper into the product details, i.e title, summary, taglines, genre. It provides much more information about the item. The format of these details are in text format(string) and is important to convert
 
-## Reference and acknowledgement:
-Running the Program
-recommendBasic computes recommendations using the threshold user profile builder, and recommendWeighted uses the weighted user profile builder.
-For example:
-$ ./gradlew recommendBasic -PuserId=91
+Term Frequency-Inverse Document Frequency(TF-IDF) TF-IDF is used in Information Retrieval for feature extraction purposes and it is a sub-area of Natural Language Processing(NLP).
 
-Special thanks to https://github.com/Mahendra-Maiti/Content-based-recommender/blob/master/README.md
+In the End, TF-IDF is a measure used to evaluate how important a word is to a document in a document corpus. The importance of the word increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
 
+## Approach 2: Using Rated Content to Recommend
+Approach 2 leverages description or attributes from items the user has interacted to recommend similar items. It depends only on the user previous choices, making this method robust to avoid the cold-start problem. For textual items, like articles, news and books, it is simple to use the article category or raw text to build item profiles and user profiles.
+
+Suppose I watch a particular genre movie I will be recommended movies w.r.t that specific genre. The Title, Year of Release, Director, Cast are also helpful in identifying similar movie content.
